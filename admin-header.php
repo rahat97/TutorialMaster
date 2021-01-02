@@ -34,11 +34,11 @@ $total_category_number = $total_number_categories->fetch_assoc();
     <?php
     if ($_SESSION["user_type"] == 1) {
         ?>
-        <title>User Dashboard | TutorialNow</title>
+        <title>User Dashboard | TutorialMaster</title>
         <?php
     } elseif ($_SESSION['user_type'] == 0) {
         ?>
-        <title>User Dashboard | TutorialNow</title>
+        <title>User Dashboard | TutorialMaster</title>
         <?php
     }
     ?>
