@@ -4,7 +4,7 @@ if ($_SESSION['user_type'] == 0) {
     <nav class="navbar navbar-expand navbar-dark bg-success static-top">
 
         <a class="navbar-brand mr-1"
-           href="<?php echo ($_SESSION['user_type'] == 0) ? 'admin-dashboard.php' : 'home.php' ?>">TutorialNow</a>
+           href="<?php echo ($_SESSION['user_type'] == 0) ? 'admin-dashboard.php' : 'home.php' ?>">TutorialMaster</a>
 
         <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
             <i class="fas fa-bars"></i>

@@ -221,7 +221,7 @@ if ($result->num_rows > 0) {
 
 <footer class="container-fluid text-center">
 
-    <p>CopyRight © 2019 TutorialNow All Rights Reserved</p>
+    <p>CopyRight © 2020 TutorialMaster All Rights Reserved</p>
 </footer>
 
 <script src="plugins/jquery/jquery.min.js"></script>
