@@ -1,12 +1,6 @@
 <?php
 session_start();
-//if (!empty($_SESSION["username"])) {
-//    if ($_SESSION["username"] == "admin") {
-//        header('Location: admin.php');
-//    } else {
-//        header('Location: home.php');
-//    }
-//}
+
 require 'connection.php';
 if (isset($_POST['username']) && isset($_POST['password'])) {
     $username = $_POST['username'];
@@ -26,16 +20,13 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         } elseif ($_SESSION["user_type"] == 1) {
             header('Location: home.php');
         }
-        /*} else {
-            header($_SERVER['PHP_SELF']);
-        }*/
-        // echo "User name : ".$_SESSION['username'] . " Password : " . $_SESSION['email'] . " " . $_SESSION['user_type']." ";
-
+      
+        
     } else {
         echo "<script>alert('wrong username & Password')</script>";
     }
-
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,7 +37,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/floating-labels.css"/>
     <link rel="stylesheet" href="plugins/fontawesome-free/css/all.css"/>
-
+    
     <script src="plugins/jquery/jquery.min.js"></script>
     <script src="plugins/popper/popper.min.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -78,12 +69,12 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         </a>
     </h5>
 
-    <nav class="my-2 my-md-0 mr-md-3">
+    <!--<nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="#">Test Link 1</a>
         <a class="p-2 text-dark" href="#">Link 2</a>
         <a class="p-2 text-dark" href="#">Link 3</a>
         <a class="p-2 text-dark" href="#">Link 3</a>
-    </nav>
+    </nav> -->
     <a class="btn btn-outline-primary" href="signup.php">SignUp</a>
 </div>
 <div class="container">
@@ -125,42 +116,8 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         </div>
         <div class="col-4"></div>
     </div>
-    <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2019</p>
-
-
-</div>
-<!--<div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"></div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <center><h4>Log In</h4></center>
-                </div>
-                <div class="panel-body">
-                    <form action="login.php" method="post">
-                        <div class="form-group">
-                            <label for="username">User Name:</label>
-                            <input type="text" class="form-control" id="username" name="username" required
-                                   placeholder="Username">
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password:</label>
-                            <input type="password" class="form-control" id="password" name="password" required
-                                   placeholder="Password">
-                            <input type="checkbox" onclick="myFunction()"> &nbsp;Show Password
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Log In</button>
-                    </form>
-                </div>
-                <div class="panel-footer" align="right">
-                    <p>Not Registered yet? <a href="signup.php">Sign Up</a></p>
-                </div>
-            </div>
-        </div>
+    <p class="mt-5 mb-3 text-muted text-center">&copy; 2020-2021</p>
     </div>
-</div>-->
-
 
 <script type="text/javascript">
     function myFunction() {
